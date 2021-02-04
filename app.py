@@ -16,7 +16,7 @@ login_manager.init_app(app)
 login_manager.log_view='index'
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
-app.config['SQLALCHEMY_DATABASE_URI']='postgres://zarsdjhocxkrqu:b3cf9d8a70c83a431cd73fdbd980dac82e2d7ad2aee14a870500050ff48954c2@ec2-3-222-11-129.compute-1.amazonaws.com:5432/d2ij4vdcu5f2eh'
+app.config['SQLALCHEMY_DATABASE_URI']='postgres://joeolbucwloayc:2b934d8dced2238b0b02808933f5eab33f9fd26431447d254c172461f4c9b1a4@ec2-3-222-11-129.compute-1.amazonaws.com:5432/d8o69s1d6r6hlq'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db = SQLAlchemy(app)
 
