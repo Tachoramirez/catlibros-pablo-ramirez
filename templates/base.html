@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/materialize.min.css') }}">
+	
+	<link rel="shortcut icon" href="../static/img/icono.png">
+	
+	<title>{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+{% block navbar %}	
+<div class="navbar-fixed">
+	<nav class="blue lighten-5">
+	   	<div class="container">
+	   		<a href="/Ahome" title="Home" class="icono"><img height="60px" width="60px"  src="{{url_for('static',filename='img/icono.png')}}"></a>
+	     		<ul id="nav-mobile" class="right hide-on-med-and-down">
+	        		<li><a class="blue-text text-darken-2" href="acerca" title="Acerca">acerca</a></li>
+	        		<li><a class="blue-text text-darken-2" href="/logout" title="Log out">Log Out</a></li>
+	      		</ul>
+	   	</div>
+	</nav>
+</div>
+{% endblock %}
+{% block logo %}
+<div class="row" style="margin-top: 20px;">
+	<center>
+		<div class="col s4"></div>
+		<div class="col s4"><a href="https://flask.palletsprojects.com/"><img height="90px" width="90px" style="padding: 0%; margin: 0%; " src="{{url_for('static',filename='img/Flask.png')}}"></a><br>Creado con Flask</div>
+		<div class="col s4"></div>
+	</center>
+</div>
+{% endblock %}
+{% block content %}
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+{% endblock %}
+</body>
+<script type="text/javascript">
+	
+</script>
+</html>

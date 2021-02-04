@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+	
+	{% block title %}Error al autenticar{% endblock %}
+
+	{% block navbar %}{% endblock %}
+	{% block logo %}{% endblock %}
+	{% block content %}
+	<div class="container" style="margin-top: 50px;">
+		<center>
+			<h1>Lo sentimos debes estar registrado</h1>
+		
+			<div class="row">
+				<div class="col s12">
+					<img width="50%" height="50%" src="{{url_for('static',filename='img/stop.jpg')}}">
+				</div>
+			</div>
+		</center>
+	</div>
+		
+	{% endblock %}

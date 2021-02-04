@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Catálogo de libros{% endblock %}
+
+{% block content %}
+<div class="">
+	<h1 class="center-align">Editoriales registradas</h1>
+	<h6 class="center-align">Aqui tenemos registradas las editoriales</h6>
+	<hr>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <img width="100%" height="300px" src="{{url_for('static',filename='img/vereditoriales.jpg')}}">
+    </div>
+  </div>  
+		
+	<a class="btn-large" href="/Ahome">Regresar</a><br><br><hr>
+	 <table>
+        <thead>
+          <tr>
+              <th>N° registrado</th>
+              <th>Nombre</th>
+              <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for e in edits %}
+          <tr>
+            <th scope="row">{{e.id_editorial}}</th>
+            <td>{{e.nombre}}</td>
+            <td>
+              <a href="/editedit/{{ e.id_editorial }}"  class="btn">Editar</a>
+              <a href="/eeliminar/{{ e.id_editorial }}" class="btn red">Eliminar</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+</div>
+
+{% endblock %}
